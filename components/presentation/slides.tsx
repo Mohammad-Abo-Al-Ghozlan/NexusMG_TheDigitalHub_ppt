@@ -619,46 +619,6 @@ export function AIFeaturesSlide() {
   )
 }
 
-// Slide 8: Additional Functionalities
-export function AdditionalFeaturesSlide() {
-  const features = [
-    { icon: Smartphone, label: "Responsive Design" },
-    { icon: Lock, label: "Secure JWT + Google Auth" },
-    { icon: Shield, label: "Password Hashing" },
-    { icon: CheckCircle2, label: "Form Validation" },
-    { icon: Sparkles, label: "Smooth Animations" },
-    { icon: FileText, label: "API Documentation" },
-    { icon: Zap, label: "Performance Optimized" },
-    { icon: Globe, label: "Clean User Experience" },
-  ]
-
-  return (
-    <div className="h-full w-full flex flex-col px-16 py-12">
-      <motion.div variants={stagger} initial="hidden" animate="visible" className="flex-1 flex flex-col">
-        <motion.div variants={fadeInUp} className="mb-10">
-          <span className="text-blue-400 text-sm font-medium tracking-wider uppercase">Supporting Features</span>
-          <h2 className="text-5xl font-bold mt-2">Additional Functionalities</h2>
-        </motion.div>
-
-        <motion.div variants={stagger} className="grid grid-cols-4 gap-5 flex-1 content-center">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              variants={scaleIn}
-              className="glass-card rounded-xl p-6 flex flex-col items-center text-center group hover:bg-blue-500/10 transition-colors duration-300"
-            >
-              <div className="w-14 h-14 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <feature.icon className="w-7 h-7 text-blue-400" />
-              </div>
-              <span className="text-sm font-medium text-foreground">{feature.label}</span>
-            </motion.div>
-          ))}
-        </motion.div>
-      </motion.div>
-    </div>
-  )
-}
-
 // Slide 9: Challenges & Solutions
 export function ChallengesSolutionsSlide() {
   const challenges = [
